@@ -1,7 +1,7 @@
 package impl;
 
 public class Contact {
-	private String id;
+	private String id;	
 	private String name;
 	private String phoneNumber;
 	private String email;
@@ -37,6 +37,11 @@ public class Contact {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+	
+	@Override
+	public String toString() {
+		return "Contact INFO [id=" + id + ", name=" + name + ", phoneNumber=" + phoneNumber + ", email=" + email + "]";
 	}
 	
 	
